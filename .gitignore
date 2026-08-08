@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# DVC (data is tracked by DVC, not git)
+/data/raw/data.csv
+.dvc/cache/
+.dvc/tmp/
+
+# Model artifacts (regenerate via `python src/train.py`, tracked via DVC/MLflow instead)
+models/*.pkl
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
